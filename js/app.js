@@ -56,7 +56,6 @@ $('#continue').on('click', ()=> {
 		onePlayer.finalScreen();
 		onePlayer.finalScoreSetup();
 		console.log('final');
-		console.log(onePlayer.score1)
 	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
 		twoPlayerGame.p2Round1Screen();
 		twoPlayerGame.p2Round1Setup();
@@ -154,7 +153,7 @@ $('#q2a1').on('click', ()=> {
 	}else if (onePlayer.currentRound === 2) {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
-		onePlayer.p1correct += 1;
+		onePlayer.p1incorrect += 1;
 	} else if (twoPlayerGame.p1Round === 1) {
 		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 1) {
@@ -164,44 +163,44 @@ $('#q2a1').on('click', ()=> {
 	} else if (twoPlayerGame.p2Round === 2) {
 		twoPlayerGame.p2incorrect += 1;
 	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1correct += 1;
+		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2correct += 1;
+		twoPlayerGame.p2incorrect += 1;
 	}
 
 });
 $('#q2a2').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
-		onePlayer.p1incorrect +=1;
+		onePlayer.p1correct +=1;
 	}else if (onePlayer.currentRound === 2) {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
-		onePlayer.p1incorrect +=1;
+		onePlayer.p1correct +=1;
 	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
+		twoPlayerGame.p1correct += 1;
 	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
+		twoPlayerGame.p2correct += 1;
 	} else if (twoPlayerGame.p1Round === 2) {
 		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 2) {
 		twoPlayerGame.p2incorrect += 1;
 	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1incorrect += 1;
+		twoPlayerGame.p1correct += 1;
 	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2incorrect += 1;
+		twoPlayerGame.p2correct += 1;
 	}
 });
 $('#q2a3').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
-		onePlayer.p1correct += 1;
+		onePlayer.p1incorrect += 1;
 	}else if (onePlayer.currentRound === 2) {
 		onePlayer.p1correct += 1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1incorrect +=1;
 	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1correct += 1;
+		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2correct += 1;
+		twoPlayerGame.p2incorrect += 1;
 	} else if (twoPlayerGame.p1Round === 2) {
 		twoPlayerGame.p1correct += 1;
 	} else if (twoPlayerGame.p2Round === 2) {
@@ -214,19 +213,19 @@ $('#q2a3').on('click', ()=> {
 });
 $('#q3a1').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
-		onePlayer.p1correct += 1;
+		onePlayer.p1incorrect += 1;
 	}else if (onePlayer.currentRound === 2) {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
-		onePlayer.p1incorrect +=1;
+		onePlayer.p1correct +=1;
 	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
 		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
+	} else if (twoPlayerGame.p2Round === 1) {
 		twoPlayerGame.p2incorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2correct += 1;
 	} else if (twoPlayerGame.p1Round === 3) {
 		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 3) {
@@ -236,44 +235,44 @@ $('#q3a1').on('click', ()=> {
 });
 $('#q3a2').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
-		onePlayer.p1incorrect +=1;
+		onePlayer.p1correct +=1;
 	}else if (onePlayer.currentRound === 2) {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
-		onePlayer.p1correct += 1;
+		onePlayer.p1incorrect += 1;
 	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
+		twoPlayerGame.p1correct += 1;
 	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
+		twoPlayerGame.p2correct += 1;
 	} else if (twoPlayerGame.p1Round === 2) {
 		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 2) {
 		twoPlayerGame.p2incorrect += 1;
 	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1correct += 1;
+		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2correct += 1;
+		twoPlayerGame.p2incorrect += 1;
 	}
 });
 $('#q3a3').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 2) {
-		onePlayer.p1correct += 1;
+		onePlayer.p1incorrect += 1;
 	}else if (onePlayer.currentRound === 3) {
-		onePlayer.p1incorrect +=1;
+		onePlayer.p1correct +=1;
 	} else if (twoPlayerGame.p1Round === 1) {
 		twoPlayerGame.p1incorrect += 1;
 	} else if (twoPlayerGame.p2Round === 1) {
 		twoPlayerGame.p2incorrect += 1;
 	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
 		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
+	} else if (twoPlayerGame.p2Round === 2) {
 		twoPlayerGame.p2incorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 3) {
+		twoPlayerGame.p2correct += 1;
 	}
 });
 
@@ -308,8 +307,7 @@ class Game {
 
 
 	roundUpdate() {
-		// for (let i = 0; i < numberofRounds; i++) {
-			this.currentRound+=1;
+		this.currentRound+=1;
 	}
 		
 	
@@ -322,8 +320,6 @@ class Game {
 	}
 
 	round2setup() {
-		this.addQuestions();
-		this.addAnswers();
 		this.roundDosQuestions();
 		this.roundDosAnswers();
 		this.roundUpdate();
@@ -336,76 +332,63 @@ class Game {
 	}
 
 	addQuestions () {
-		this.questions.push("html definition");
-		this.questions.push("question 2");
-		this.questions.push("question 3");
-		this.questions.push("question 4");
-		this.questions.push("question 5");
-		this.questions.push("question 6");
-		this.questions.push("question 7");
-		this.questions.push("question 8");
-		this.questions.push("question 9");
+		this.questions.push("Q1: What does true || false equates to?");
+		this.questions.push("Q2: A boolean expression: ");
+		this.questions.push("Q3: What does false && true equate to?");
+		this.questions.push("Q1: You can use the DOM for");
+		this.questions.push("Q2: When do we instantiate a new object?");
+		this.questions.push("Q3: What is an example of control flow?");
+		this.questions.push("Q1: What has key value pairs?");
+		this.questions.push("Q2: What does scope mean?");
+		this.questions.push("Q3: What is control flow?");
 	}
 
 	addAnswers() {
-		this.answers.push('answer1');
-		this.answers.push('answer2');
-		this.answers.push('answer3');
-		this.answers.push('answer4');
-		this.answers.push('answer5');
-		this.answers.push('answer6');
-		this.answers.push('answer7');
-		this.answers.push('answer8');
-		this.answers.push('answer9');
+		this.answers.push('A1: true');
+		this.answers.push('A2: false');
+		this.answers.push('A3: is either true or false');
+		this.answers.push('A1: function');
+		this.answers.push('A2: create new HTML elements');
+		this.answers.push('A3: classes');
+		this.answers.push('A1: object');
+		this.answers.push('A2: restriction of where in your code your varaibles can be accessed');
+		this.answers.push('A3: order in which individual staements or instructions are executed');
 
 
 	}
 	roundUnoQuestions() {
 		let q1 = this.questions[0];
-		console.log(q1);
 		let ww = $('#s1r1').children();
-		console.log(ww);
 		let d1 = ww[0];
-		console.log(d1);
 		$(d1).text(q1);
 
 		let q2 = this.questions[1];
-		console.log(q2);
 		let xx = $('#s1r1').children();
-		console.log(ww);
 		let d2 = xx[1];
-		console.log(d2);
 		$(d2).text(q2);
 
 		let q3 = this.questions[2];
-		console.log(q3);
 		let zz = $('#s1r1').children();
-		console.log(ww);
 		let d3 = zz[2];
-		console.log(d3);
 		$(d3).text(q3);
 	}
 
 	roundUnoAnswers() {
 		let a1 = this.answers[0];
-		console.log(a1);
 		let aa = $('#s1r1').children();
-		console.log(aa);
 		let bb = aa[3];
-		console.log(bb);
 		let cc = $(bb).children();
 		let dd = cc[0];
 		$(dd).text(a1);
 		
 		let a2 = this.answers[1];
-		console.log(a2);
 		let ee = $('#s1r1').children();
 		let ff = ee[3];
 		let gg = $(ff).children();
 		let hh = gg[1];
 		$(hh).text(a2);
 
-		let a3 = this.answers[0];
+		let a3 = this.answers[2];
 		let ii = $('#s1r1').children();
 		let jj = ii[3];
 		let kk = $(jj).children();
@@ -415,43 +398,30 @@ class Game {
 	}
 	roundDosQuestions() {
 		let q1 = this.questions[3];
-		console.log(q1);
 		let ww = $('#s1r2').children();
-		console.log(ww);
 		let d1 = ww[0];
-		console.log(d1);
 		$(d1).text(q1);
 
 		let q2 = this.questions[4];
-		console.log(q2);
 		let xx = $('#s1r2').children();
-		console.log(ww);
 		let d2 = xx[1];
-		console.log(d2);
 		$(d2).text(q2);
 
 		let q3 = this.questions[5];
-		console.log(q3);
 		let zz = $('#s1r2').children();
-		console.log(ww);
 		let d3 = zz[2];
-		console.log(d3);
 		$(d3).text(q3);
 	}
 
 	roundDosAnswers() {
 		let a1 = this.answers[3];
-		console.log(a1);
 		let aa = $('#s1r2').children();
-		console.log(aa);
 		let bb = aa[3];
-		console.log(bb);
 		let cc = $(bb).children();
 		let dd = cc[0];
 		$(dd).text(a1);
 		
 		let a2 = this.answers[4];
-		console.log(a2);
 		let ee = $('#s1r2').children();
 		let ff = ee[3];
 		let gg = $(ff).children();
@@ -469,43 +439,30 @@ class Game {
 
 	roundTresQuestions() {
 		let q1 = this.questions[6];
-		console.log(q1);
 		let ww = $('#s1r3').children();
-		console.log(ww);
 		let d1 = ww[0];
-		console.log(d1);
 		$(d1).text(q1);
 
 		let q2 = this.questions[7];
-		console.log(q2);
 		let xx = $('#s1r3').children();
-		console.log(ww);
 		let d2 = xx[1];
-		console.log(d2);
 		$(d2).text(q2);
 
 		let q3 = this.questions[8];
-		console.log(q3);
 		let zz = $('#s1r3').children();
-		console.log(ww);
 		let d3 = zz[2];
-		console.log(d3);
 		$(d3).text(q3);
 	}
 
 	roundTresAnswers() {
 		let a1 = this.answers[6];
-		console.log(a1);
 		let aa = $('#s1r3').children();
-		console.log(aa);
 		let bb = aa[3];
-		console.log(bb);
 		let cc = $(bb).children();
 		let dd = cc[0];
 		$(dd).text(a1);
 		
 		let a2 = this.answers[7];
-		console.log(a2);
 		let ee = $('#s1r3').children();
 		let ff = ee[3];
 		let gg = $(ff).children();
@@ -522,11 +479,11 @@ class Game {
 	}
 	finalScoreSetup() {
 		const $h1 = $('<h2/>');
-		$h1.text(`Correct Answers: ${this.p1correct.toString()}`);
-		const $h12 = $('<h2/>');
-		$h12.text(`Incorrect Answers: ${this.p1incorrect.toString()}`);
+		$h1.text(`Correct Answers: ${this.p1correct.toString()} of 9`);
 		$h1.insertAfter('#finalScoreText');
-		$h12.insertAfter('#finalScoreText');
+		// $h12.text(`Incorrect Answers: ${this.p1incorrect.toString()}`);
+		// $h1.insertAfter('#finalScoreText');
+		// $h12.insertAfter('#finalScoreText');
 	}
 
 
@@ -620,27 +577,20 @@ class Game2p extends Game {
 	}
 
 	p2Round1Setup() {
-		this.addQuestions();
 		this.p2Round1Questions();
-		this.addAnswers();
 		this.p2Round1Answers();
-		this.p1RoundUpdate();
 		this.p2RoundUpdate();
 		console.log(this.p1Round);
 		console.log(this.p2Round);
 	}
 
 	p1Round2Setup() {
-		this.addQuestions();
-		this.addAnswers();
 		this.p1Round2Questions();
 		this.p1Round2Answers();
 		this.p1RoundUpdate();
 	}
 
 	p2Round2Setup() {
-		this.addQuestions();
-		this.addAnswers();
 		this.p2Round2Questions();
 		this.p2Round2Answers();
 		this.p2RoundUpdate();
@@ -659,18 +609,18 @@ class Game2p extends Game {
 	p2FinalScreenSetup() {
 
 		const $h23 = $('<h2/>');
-		$h23.text(` Player 2 Correct Answers: ${this.p2correct.toString()}`);
-		const $h24 = $('<h2/>');
-		$h24.text(`Player 2 Incorrect Answers: ${this.p2incorrect.toString()}`);
+		$h23.text(` Player 2 Correct Answers: ${this.p2correct.toString()} of 9`);
 		$h23.insertAfter('#finalScoreText');
-		$h24.insertAfter('#finalScoreText');
+		// $h24.text(`Player 2 Incorrect Answers: ${this.p2incorrect.toString()}`);
+		// $h23.insertAfter('#finalScoreText');
+		// $h24.insertAfter('#finalScoreText');
 
 		const $h2 = $('<h2/>');
-		$h2.text(` Player 1 Correct Answers: ${this.p1correct.toString()}`);
-		const $h22 = $('<h2/>');
-		$h22.text(`Player 1 Incorrect Answers: ${this.p1incorrect.toString()}`);
+		$h2.text(` Player 1 Correct Answers: ${this.p1correct.toString()} of 9`);
 		$h2.insertAfter('#finalScoreText');
-		$h22.insertAfter('#finalScoreText');
+		// $h22.text(`Player 1 Incorrect Answers: ${this.p1incorrect.toString()}`);
+		// $h2.insertAfter('#finalScoreText');
+		// $h22.insertAfter('#finalScoreText');
 
 	}
 	p1Round1Questions() {
@@ -714,7 +664,7 @@ class Game2p extends Game {
 		let hh = gg[1];
 		$(hh).text(a2);
 
-		let a3 = this.answers[0];
+		let a3 = this.answers[2];
 		let ii = $('#p1r1').children();
 		let jj = ii[3];
 		let kk = $(jj).children();
@@ -755,7 +705,7 @@ class Game2p extends Game {
 		let hh = gg[1];
 		$(hh).text(a2);
 
-		let a3 = this.answers[0];
+		let a3 = this.answers[2];
 		let ii = $('#p2r1').children();
 		let jj = ii[3];
 		let kk = $(jj).children();
