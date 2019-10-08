@@ -35,7 +35,9 @@ $('#back').on('click', () => {
 $('#p1').on('click', ()=> {
 	onePlayer.round1screen(); 
 	onePlayer.round1setup();
-	
+	const $h1 = $('<h1/>')
+	$h1.text('Player 1, Round 1');
+	$('#s1r1').prepend($h1);
 });
 
 $('#p2').on('click', () => {
@@ -50,10 +52,16 @@ $('#continue').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
 		onePlayer.round2screen();
 		onePlayer.round2setup();
+		const $h1 = $('<h1/>')
+		$h1.text('Player 1, Round 2');
+		$('#s1r2').prepend($h1);
 		console.log('round2');
 	} else if (onePlayer.currentRound ===2) {
 		onePlayer.round3screen();
 		onePlayer.round3setup();
+		const $h1 = $('<h1/>')
+		$h1.text('Player 1, Round 3');
+		$('#s1r3').prepend($h1);
 		console.log('round 3');
 	} else if (onePlayer.currentRound === 3) {
 		onePlayer.finalScreen();
@@ -399,15 +407,13 @@ class Game {
 		let a1 = this.answers[0];
 		let aa = $('#s1r1').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[1];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[2];
-		$(ll).text(a3);
+		$(dd).text(a3);
 		
 	}
 	roundDosQuestions() {
@@ -427,15 +433,13 @@ class Game {
 		let a1 = this.answers[3];
 		let aa = $('#s1r2').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[4];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[5];
-		$(ll).text(a3);
+		$(dd).text(a3);
 	}
 		
 
@@ -456,15 +460,14 @@ class Game {
 		let a1 = this.answers[6];
 		let aa = $('#s1r3').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[7];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[8];
-		$(ll).text(a3);
+		$(dd).text(a3);
+		
 		
 	}
 	finalScoreSetup() {
@@ -483,10 +486,13 @@ class Game {
 class Game1p extends Game {
 	round1screen () {
 		$('#openingScreen').css("display", "none");
-		$('#onePlayer').css("display", "block");
-		$('#s1r1').css("display", "block");
-		$('.q1').css("display", "block");
-		$('#buttons').css("display", "block");
+		$('#onePlayer').css("display", "grid");
+		$('#s1r1').css("display", "grid");
+		//$('.answers').css("display", "grid");
+		// $('.a1').css("display", "flex");
+		// $('.a2').css("display", "flex");
+		// $('.a3').css("display", "flex");
+		$('#buttons').css("display", "grid");
 		$('#twoPlayer').css("display", "none");
 		$('#stats').css("display", "none");
 		$('#finalScreen').css("display", "none");
@@ -617,16 +623,13 @@ class Game2p extends Game {
 		let a1 = this.answers[0];
 		let aa = $('#p1r1').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[1];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[2];
-		$(ll).text(a3);
-		
+		$(dd).text(a3);
 	}
 
 	p2Round1Questions() {
@@ -646,15 +649,13 @@ class Game2p extends Game {
 		let a1 = this.answers[0];
 		let aa = $('#p2r1').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[1];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[2];
-		$(ll).text(a3);
+		$(dd).text(a3);
 		
 	}
 	p1Round2Questions() {
@@ -674,15 +675,13 @@ class Game2p extends Game {
 		let a1 = this.answers[3];
 		let aa = $('#p1r2').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[4];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[5];
-		$(ll).text(a3);
+		$(dd).text(a3);
 	}
 	p2Round2Questions() {
 		let q1 = this.questions[3];
@@ -701,15 +700,13 @@ class Game2p extends Game {
 		let a1 = this.answers[3];
 		let aa = $('#p2r2').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[4];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[5];
-		$(ll).text(a3);
+		$(dd).text(a3);
 	}
 	p1Round3Questions() {
 		let q1 = this.questions[6];
@@ -728,15 +725,13 @@ class Game2p extends Game {
 		let a1 = this.answers[6];
 		let aa = $('#p1r3').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[7];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[8];
-		$(ll).text(a3);
+		$(dd).text(a3);
 		
 	}
 	p2Round3Questions() {
@@ -756,16 +751,13 @@ class Game2p extends Game {
 		let a1 = this.answers[6];
 		let aa = $('#p2r3').children();
 		let bb = aa[3];
-		let cc = $(bb).children();
-		let dd = cc[0];
-		let hh = cc[1];
-		let ll = cc[2];
-		$(dd).text(a1);	
+		let cc = aa[4];
+		let dd = aa[5];
+		$(bb).text(a1);
 		let a2 = this.answers[7];
-		$(hh).text(a2);
+		$(cc).text(a2);
 		let a3 = this.answers[8];
-		$(ll).text(a3);
-		
+		$(dd).text(a3);
 	}
 
 

@@ -1,9 +1,95 @@
-/*style style style*/
 
-.hidden {
-	display: none;
+#onePlayer {
+	/*grid-template-columns: 1fr 1fr;*/
+}
+#s1r1 {
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-column-gap: 1fr;*/
+
+
 }
 
-.display {
-	display: block;
+
+#s1r1 > h1 {
+	font-size: 50px;
+	/*grid-column: 1/3;
+	grid-row: 1/2;*/
+}
+
+#s1r1 > .q1 {
+	background-image: url("https://www.trzcacak.rs/myfile/detail/9-97858_pin-orange-paint-splatter-clip-art-orange-paint.png");
+	background-size: 300px;
+	min-height: 200px;
+	background-repeat: no-repeat;
+	align-self: stretch;
+	
+	/*grid-column: 1/2;
+	grid-row: 2/3;*/
+
+
+}
+#s1r1 > .q2 {
+	background-image: url("https://www.trzcacak.rs/myfile/detail/9-97858_pin-orange-paint-splatter-clip-art-orange-paint.png");
+	background-size: 300px;
+	min-height: 200px;
+	background-repeat: no-repeat;
+	
+/*	grid-row: 3/4;
+	grid-column: 1/2*/
+
+}
+#s1r1 > .q3 {
+	background-image: url("https://www.trzcacak.rs/myfile/detail/9-97858_pin-orange-paint-splatter-clip-art-orange-paint.png");
+	background-size: 300px;
+	min-height: 200px;
+	background-repeat: no-repeat;
+	
+	
+	/*grid-row: 4/5;
+	grid-column: 1/2;*/
+
+}
+
+.answers {
+	flex-direction: column;
+	align-content: stretch;
+	justify-content: space-around;
+}
+
+#s1r1 > .answers > .a1 {
+	background-image: url("https://images.assetsdelivery.com/compings_v2/verca/verca1505/verca150500078.jpg");
+	min-height: 200px;
+	background-size: 300px;
+	background-repeat: no-repeat;
+	
+
+	
+}
+
+#s1r1 > .answers > .a2 {
+	background-image: url("https://images.assetsdelivery.com/compings_v2/verca/verca1505/verca150500078.jpg");
+	background-repeat: no-repeat;
+	min-height: 200px;
+	background-size: 300px;
+	
+
+	
+	
+
+}
+#s1r1 > .answers > .a3 {
+	background-image: url("https://images.assetsdelivery.com/compings_v2/verca/verca1505/verca150500078.jpg");
+	background-repeat: no-repeat;
+	background-size: 300px;
+	min-height: 200px;
+
+
+}
+
+#buttons {
+	grid-template-rows: repeat(4, 1fr);
+	grid-area: 1em; 
 }
