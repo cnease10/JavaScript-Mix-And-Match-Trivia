@@ -41,6 +41,9 @@ $('#p1').on('click', ()=> {
 $('#p2').on('click', () => {
 	twoPlayerGame.p1Round1Screen();
 	twoPlayerGame.p1Round1Setup();
+	const $h1 = $('<h1/>')
+	$h1.text('Player 1, Round 1');
+	$('#p1r1').prepend($h1);
 });
 
 $('#continue').on('click', ()=> {
@@ -59,20 +62,35 @@ $('#continue').on('click', ()=> {
 	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
 		twoPlayerGame.p2Round1Screen();
 		twoPlayerGame.p2Round1Setup();
+		const $h1 = $('<h1/>')
+		$h1.text('Player 2, Round 1');
+		$('#p2r1').prepend($h1);
 		console.log('one');
 	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
 		twoPlayerGame.p1Round2Screen();
 		twoPlayerGame.p1Round2Setup();
 		console.log('')
+		const $h1 = $('<h1/>')
+		$h1.text('Player 1, Round 2');
+		$('#p1r2').prepend($h1);
 	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
 		twoPlayerGame.p2Round2Screen();
 		twoPlayerGame.p2Round2Setup();
+		const $h1 = $('<h1/>')
+		$h1.text('Player 2, Round 2');
+		$('#p2r2').prepend($h1);
 	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
 		twoPlayerGame.p1Round3Screen();
 		twoPlayerGame.p1Round3Setup();
+		const $h1 = $('<h1/>')
+		$h1.text('Player 1, Round 3');
+		$('#p1r3').prepend($h1);
 	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
 		twoPlayerGame.p2Round3Screen();
 		twoPlayerGame.p2Round3Setup();
+		const $h1 = $('<h1/>')
+		$h1.text('Player 2, Round 3');
+		$('#p2r3').prepend($h1);
 	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
 		twoPlayerGame.p2FinalScreen();
 		twoPlayerGame.p2FinalScreenSetup();
@@ -89,18 +107,19 @@ $('#q1a1').on('click', ()=> {
 		onePlayer.p1incorrect +=1;
 	} else if (onePlayer.currentRound === 3) {
 		onePlayer.p1correct += 1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2correct += 1;
+
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npcorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npcorrect += 1;
 	}
 
 });
@@ -111,39 +130,41 @@ $('#q1a2').on('click', ()=> {
 		onePlayer.p1correct += 1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2incorrect += 1;
+
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npcorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npincorrect += 1;
 	}
 });
 $('#q1a3').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
 		onePlayer.p1incorrect +=1;
-	}else if (onePlayer.currentRound === 2) {
+	}else if (onePlayer.currentRound === 1) {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2incorrect += 1;
+
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npincorrect += 1;
 	}
 
 });
@@ -154,82 +175,85 @@ $('#q2a1').on('click', ()=> {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2incorrect += 1;
+
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npincorrect += 1;
 	}
 
 });
 $('#q2a2').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
-		onePlayer.p1correct +=1;
+		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 2) {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1correct +=1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2correct += 1;
+
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npcorrect += 1;
 	}
 });
 $('#q2a3').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
-		onePlayer.p1incorrect += 1;
+		onePlayer.p1correct += 1;
 	}else if (onePlayer.currentRound === 2) {
 		onePlayer.p1correct += 1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1incorrect +=1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2incorrect += 1;
+
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npcorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npcorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npincorrect += 1;
 	}
 });
 $('#q3a1').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
 		onePlayer.p1incorrect += 1;
 	}else if (onePlayer.currentRound === 2) {
-		onePlayer.p1incorrect +=1;
+		onePlayer.p1correct +=1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1correct +=1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2incorrect += 1;
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npcorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npincorrect += 1;
 	}
 
 });
@@ -240,18 +264,18 @@ $('#q3a2').on('click', ()=> {
 		onePlayer.p1incorrect +=1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2correct += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2incorrect += 1;
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npcorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npincorrect += 1;
 	}
 });
 $('#q3a3').on('click', ()=> {
@@ -261,18 +285,18 @@ $('#q3a3').on('click', ()=> {
 		onePlayer.p1incorrect += 1;
 	}else if (onePlayer.currentRound === 3) {
 		onePlayer.p1correct +=1;
-	} else if (twoPlayerGame.p1Round === 1) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 1) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 2) {
-		twoPlayerGame.p1incorrect += 1;
-	} else if (twoPlayerGame.p2Round === 2) {
-		twoPlayerGame.p2incorrect += 1;
-	} else if (twoPlayerGame.p1Round === 3) {
-		twoPlayerGame.p1correct += 1;
-	} else if (twoPlayerGame.p2Round === 3) {
-		twoPlayerGame.p2correct += 1;
+	} else if (twoPlayerGame.p1Round === 1 && twoPlayerGame.p2Round === 0) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 1 && twoPlayerGame.p1Round === 1) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 2 && twoPlayerGame.p2Round === 1) {
+		twoPlayerGame.p2p1incorrect += 1;
+	} else if (twoPlayerGame.p2Round === 2 && twoPlayerGame.p1Round === 2) {
+		twoPlayerGame.npincorrect += 1;
+	} else if (twoPlayerGame.p1Round === 3 && twoPlayerGame.p2Round === 2) {
+		twoPlayerGame.p2p1correct += 1;
+	} else if (twoPlayerGame.p2Round === 3 && twoPlayerGame.p1Round === 3) {
+		twoPlayerGame.npcorrect += 1;
 	}
 });
 
@@ -281,8 +305,10 @@ class Game {
 	constructor() {
 		this.p1correct = 0,
 		this.p1incorrect = 0,
-		this.p2correct = 0,
-		this.p2incorrect = 0,
+		this.p2p1correct= 0,
+		this.p2p1incorrect = 0,
+		this.npcorrect = 0,
+		this.npincorrect = 0,
 		this.finalScore = 0,
 		this.questions = [],
 		this.answers = [],
@@ -335,8 +361,8 @@ class Game {
 		this.questions.push("Q1: What does true || false equates to?");
 		this.questions.push("Q2: A boolean expression: ");
 		this.questions.push("Q3: What does false && true equate to?");
-		this.questions.push("Q1: You can use the DOM for");
-		this.questions.push("Q2: When do we instantiate a new object?");
+		this.questions.push("Q1: When using the DOM, you can create: ");
+		this.questions.push("Q2: When instantiating, you create");
 		this.questions.push("Q3: What is an example of control flow?");
 		this.questions.push("Q1: What has key value pairs?");
 		this.questions.push("Q2: What does scope mean?");
@@ -347,12 +373,12 @@ class Game {
 		this.answers.push('A1: true');
 		this.answers.push('A2: false');
 		this.answers.push('A3: is either true or false');
-		this.answers.push('A1: function');
-		this.answers.push('A2: create new HTML elements');
-		this.answers.push('A3: classes');
+		this.answers.push('A1: functions');
+		this.answers.push('A2: new HTML elements');
+		this.answers.push('A3: objects');
 		this.answers.push('A1: object');
-		this.answers.push('A2: restriction of where in your code your varaibles can be accessed');
-		this.answers.push('A3: order in which individual staements or instructions are executed');
+		this.answers.push('A2: restriction of where in your code your variables can be accessed');
+		this.answers.push('A3: order in which individual statements or instructions are executed');
 
 
 	}
@@ -360,16 +386,12 @@ class Game {
 		let q1 = this.questions[0];
 		let ww = $('#s1r1').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[1];
-		let xx = $('#s1r1').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[2];
-		let zz = $('#s1r1').children();
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -379,20 +401,12 @@ class Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[1];
-		let ee = $('#s1r1').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[2];
-		let ii = $('#s1r1').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 		
 	}
@@ -400,16 +414,12 @@ class Game {
 		let q1 = this.questions[3];
 		let ww = $('#s1r2').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[4];
-		let xx = $('#s1r2').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[5];
-		let zz = $('#s1r2').children();
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -419,20 +429,12 @@ class Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[4];
-		let ee = $('#s1r2').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[5];
-		let ii = $('#s1r2').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 	}
 		
@@ -441,16 +443,12 @@ class Game {
 		let q1 = this.questions[6];
 		let ww = $('#s1r3').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[7];
-		let xx = $('#s1r3').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[8];
-		let zz = $('#s1r3').children();
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -460,20 +458,12 @@ class Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[7];
-		let ee = $('#s1r3').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[8];
-		let ii = $('#s1r3').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 		
 	}
@@ -481,9 +471,6 @@ class Game {
 		const $h1 = $('<h2/>');
 		$h1.text(`Correct Answers: ${this.p1correct.toString()} of 9`);
 		$h1.insertAfter('#finalScoreText');
-		// $h12.text(`Incorrect Answers: ${this.p1incorrect.toString()}`);
-		// $h1.insertAfter('#finalScoreText');
-		// $h12.insertAfter('#finalScoreText');
 	}
 
 
@@ -573,15 +560,12 @@ class Game2p extends Game {
 		this.addAnswers();
 		this.p1Round1Answers();
 		this.p1RoundUpdate();
-		console.log(this.p1Round);
 	}
 
 	p2Round1Setup() {
 		this.p2Round1Questions();
 		this.p2Round1Answers();
 		this.p2RoundUpdate();
-		console.log(this.p1Round);
-		console.log(this.p2Round);
 	}
 
 	p1Round2Setup() {
@@ -607,45 +591,25 @@ class Game2p extends Game {
 		this.p2RoundUpdate();
 	}
 	p2FinalScreenSetup() {
-
-		const $h23 = $('<h2/>');
-		$h23.text(` Player 2 Correct Answers: ${this.p2correct.toString()} of 9`);
-		$h23.insertAfter('#finalScoreText');
-		// $h24.text(`Player 2 Incorrect Answers: ${this.p2incorrect.toString()}`);
-		// $h23.insertAfter('#finalScoreText');
-		// $h24.insertAfter('#finalScoreText');
-
 		const $h2 = $('<h2/>');
-		$h2.text(` Player 1 Correct Answers: ${this.p1correct.toString()} of 9`);
+		$h2.text(` Player 2 Correct Answers: ${this.npcorrect.toString()} of 9`);
 		$h2.insertAfter('#finalScoreText');
-		// $h22.text(`Player 1 Incorrect Answers: ${this.p1incorrect.toString()}`);
-		// $h2.insertAfter('#finalScoreText');
-		// $h22.insertAfter('#finalScoreText');
+		const $h23 = $('<h2/>');
+		$h23.text(` Player 1 Correct Answers: ${this.p2p1correct.toString()} of 9`);
+		$h23.insertAfter('#finalScoreText');
+	
 
 	}
 	p1Round1Questions() {
 		let q1 = this.questions[0];
-		console.log(q1);
 		let ww = $('#p1r1').children();
-		console.log(ww);
 		let d1 = ww[0];
-		console.log(d1);
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[1];
-		console.log(q2);
-		let xx = $('#p1r1').children();
-		console.log(ww);
-		let d2 = xx[1];
-		console.log(d2);
 		$(d2).text(q2);
-
 		let q3 = this.questions[2];
-		console.log(q3);
-		let zz = $('#p1r1').children();
-		console.log(ww);
-		let d3 = zz[2];
-		console.log(d3);
 		$(d3).text(q3);
 	}
 
@@ -655,20 +619,12 @@ class Game2p extends Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[1];
-		let ee = $('#p1r1').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[2];
-		let ii = $('#p1r1').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 		
 	}
@@ -677,16 +633,12 @@ class Game2p extends Game {
 		let q1 = this.questions[0];
 		let ww = $('#p2r1').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[1];
-		let xx = $('#p2r1').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[2];
-		let zz = $('#p2r1').children();
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -696,20 +648,12 @@ class Game2p extends Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[1];
-		let ee = $('#p2r1').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[2];
-		let ii = $('#p2r1').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 		
 	}
@@ -717,16 +661,12 @@ class Game2p extends Game {
 		let q1 = this.questions[3];
 		let ww = $('#p1r2').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[4];
-		let xx = $('#p1r2').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[5];
-		let zz = $('#p1r2').children();
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -736,37 +676,24 @@ class Game2p extends Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[4];
-		let ee = $('#p1r2').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[5];
-		let ii = $('#p1r2').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 	}
 	p2Round2Questions() {
 		let q1 = this.questions[3];
 		let ww = $('#p2r2').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[4];
-		let xx = $('#p2r2').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[5];
-		let zz = $('#p2r2').children();
-		console.log(ww);
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -776,36 +703,24 @@ class Game2p extends Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[4];
-		let ee = $('#p2r2').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[5];
-		let ii = $('#p2r2').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 	}
 	p1Round3Questions() {
 		let q1 = this.questions[6];
 		let ww = $('#p1r3').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[7];
-		let xx = $('#p1r3').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[8];
-		let zz = $('#p1r3').children();
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -815,20 +730,12 @@ class Game2p extends Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
+		let hh = cc[1];
+		let ll = cc[2];
 		$(dd).text(a1);
-		
 		let a2 = this.answers[7];
-		let ee = $('#p1r3').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[8];
-		let ii = $('#p1r3').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 		
 	}
@@ -836,16 +743,12 @@ class Game2p extends Game {
 		let q1 = this.questions[6];
 		let ww = $('#p2r3').children();
 		let d1 = ww[0];
+		let d2 = ww[1];
+		let d3 = ww[2];
 		$(d1).text(q1);
-
 		let q2 = this.questions[7];
-		let xx = $('#p2r3').children();
-		let d2 = xx[1];
 		$(d2).text(q2);
-
 		let q3 = this.questions[8];
-		let zz = $('#p2r3').children();
-		let d3 = zz[2];
 		$(d3).text(q3);
 	}
 
@@ -855,20 +758,12 @@ class Game2p extends Game {
 		let bb = aa[3];
 		let cc = $(bb).children();
 		let dd = cc[0];
-		$(dd).text(a1);
-		
+		let hh = cc[1];
+		let ll = cc[2];
+		$(dd).text(a1);	
 		let a2 = this.answers[7];
-		let ee = $('#p2r3').children();
-		let ff = ee[3];
-		let gg = $(ff).children();
-		let hh = gg[1];
 		$(hh).text(a2);
-
 		let a3 = this.answers[8];
-		let ii = $('#p2r3').children();
-		let jj = ii[3];
-		let kk = $(jj).children();
-		let ll = kk[2];
 		$(ll).text(a3);
 		
 	}
@@ -1019,24 +914,4 @@ class Game2p extends Game {
 
 }
 const twoPlayerGame = new Game2p ();
-
-
-// $('#openingScreen').css("display", "block");
-// $('#onePlayer').css("display", "block");
-// $('#s1r1').css("display", "block");
-// $('#s1r2').css("display", "block");
-// $('#s1r3').css("display", "block");
-// $('#twoPlayer').css("display", "block");
-// $('#p1r1').css("display", "block");
-// $('#p1r2').css("display", "block");
-// $('#p1r3').css("display", "block");
-// $('#p2r1').css("display", "block");
-// $('#p2r2').css("display", "block");
-// $('#p2r3').css("display", "block");
-// $('#buttons').css("display", "block");
-// $('#stats').css("display", "block");
-// $('#r1Stats').css("display", "block");
-// $('#r2Stats').css("display", "block");
-// $('#r3Stats').css("display", "block");
-// $('#finalScreen').css("display", "block");
 
