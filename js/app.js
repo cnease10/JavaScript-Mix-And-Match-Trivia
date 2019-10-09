@@ -1,6 +1,6 @@
 function start() {
 		$('#instructScreen').css("display", "none");
-		$('#openingScreen').css("display", "block");
+		$('#openingScreen').css("display", "grid");
 		$('#onePlayer').css("display", "none");
 		$('#twoPlayer').css("display", "none");
 		$('#buttons').css("display", "none");
@@ -366,7 +366,7 @@ class Game {
 	}
 
 	addQuestions () {
-		this.questions.push("Q1: What does true || false equates to?");
+		this.questions.push("Q1: What does true || false equate to?");
 		this.questions.push("Q2: A boolean expression: ");
 		this.questions.push("Q3: What does false && true equate to?");
 		this.questions.push("Q1: When using the DOM, you can create: ");
@@ -488,10 +488,6 @@ class Game1p extends Game {
 		$('#openingScreen').css("display", "none");
 		$('#onePlayer').css("display", "grid");
 		$('#s1r1').css("display", "grid");
-		//$('.answers').css("display", "grid");
-		// $('.a1').css("display", "flex");
-		// $('.a2').css("display", "flex");
-		// $('.a3').css("display", "flex");
 		$('#buttons').css("display", "grid");
 		$('#twoPlayer').css("display", "none");
 		$('#stats').css("display", "none");
@@ -502,11 +498,10 @@ class Game1p extends Game {
 
 	round2screen() {
 		$('#openingScreen').css("display", "none");
-		$('#onePlayer').css("display", "block");
+		$('#onePlayer').css("display", "grid");
 		$('#s1r1').css("display", "none");
-		$('#s1r2').css("display", "block");
-		$('.q1').css("display", "block")
-		$('#buttons').css("display", "block");
+		$('#s1r2').css("display", "grid");
+		$('#buttons').css("display", "grid");
 		$('#twoPlayer').css("display", "none");
 		$('#stats').css("display", "none");
 		$('#finalScreen').css("display", "none");
@@ -515,12 +510,11 @@ class Game1p extends Game {
 
 	round3screen() {
 		$('#openingScreen').css("display", "none");
-		$('#onePlayer').css("display", "block");
+		$('#onePlayer').css("display", "grid");
 		$('#s1r1').css("display", "none");
 		$('#s1r2').css("display", "none");
-		$('#s1r3').css("display", "block");
-		$('.q1').css("display", "block")
-		$('#buttons').css("display", "block");
+		$('#s1r3').css("display", "grid");
+		$('#buttons').css("display", "grid");
 		$('#twoPlayer').css("display", "none");
 		$('#stats').css("display", "none");
 		$('#finalScreen').css("display", "none");
