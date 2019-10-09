@@ -3,13 +3,14 @@
 <head>
 	<title>Web Dev Mix & Match Game</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 	<div id="openingScreen">
-		<h1>Web Dev Mix & Match Game</h1>
+		<h1 class="animated infinite bounce delay 7-s">Web Dev Mix & Match Game</h1>
 		<button id="p1">I want a challenge</button>
 		<button id="p2">I've brought a friend to duel</button>
 		<button id="instructions">Instructions</button>
@@ -44,12 +45,12 @@
  	</div>
 	<div id="finalScreen">
 		<h1 id="finalScoreText">Final Score</h1>
-		<button id="restart">I want another try</button>
-		<button id="suckButton">This game sucks</button>
+		<button class="animated jackInTheBox delay 3-s" id="restart">I want another try</button>
+		<button class="animated jackInTheBox delay 3-s" id="suckButton">This game sucks</button>
 	</div>
 
 	<div id="onePlayer">
-		<div id="s1r1">
+		<div class="animated slideInLeft delay 2-s" id="s1r1">
 		
 				<div class="q1"></div>
 				<div class="q2"></div>
@@ -58,7 +59,7 @@
 				<div class="a2"></div>
 				<div class="a3"></div>	
 		</div>
-		<div id="s1r2">
+		<div class="animated slideInLeft delay 2-s" id="s1r2">
 			
 				<div class="q1"></div>
 				<div class="q2"></div>
@@ -68,7 +69,7 @@
 				<div class="a3"></div>
 		
 		</div>
-		<div id="s1r3">
+		<div class="animated slideInLeft delay 2-s" id="s1r3">
 			
 				<div class="q1"></div>
 				<div class="q2"></div>
@@ -157,23 +158,23 @@
 	</div>
 			
 	<div id="buttons">
-		<h3>Please choose your answer</h3>
+		<!-- <h3></h3> -->
 			<div id="btnq1"> Question 1
-				<button id="q1a1">Answer 1</button>
-				<button id="q1a2">Answer 2</button>
-				<button id="q1a3">Answer 3</button>
+				<button class="animated slideInLeft delay 2-s"  id="q1a1">Answer 1</button>
+				<button class="animated slideInLeft delay 2-s" id="q1a2">Answer 2</button>
+				<button class="animated slideInLeft delay 2-s" id="q1a3">Answer 3</button>
 			</div>
 			<div id="btnq2"> Question 2
-				<button id="q2a1">Answer 1</button>
-				<button id="q2a2">Answer 2</button>
-				<button id="q2a3">Answer 3</button>
+				<button class="animated slideInLeft delay 2-s" id="q2a1">Answer 1</button>
+				<button class="animated slideInLeft delay 2-s" id="q2a2">Answer 2</button>
+				<button class="animated slideInLeft delay 2-s" id="q2a3">Answer 3</button>
 			</div>
-			<div id="btnq2">Question 3
-				<button id="q3a1">Answer 1</button>
-				<button id="q3a2">Answer 2</button>
-				<button id="q3a3">Answer 3</button>
+			<div id="btnq3">Question 3
+				<button class="animated slideInLeft delay 2-s" id="q3a1">Answer 1</button>
+				<button class="animated slideInLeft delay 2-s" id="q3a2">Answer 2</button>
+				<button class="animated slideInLeft delay 2-s" id="q3a3">Answer 3</button>
 			</div>
-				<button id="continue">Continue</button>
+				<button class="animated slideInLeft delay 2-s" id="continue">Continue</button>
 	</div>
 
 	
