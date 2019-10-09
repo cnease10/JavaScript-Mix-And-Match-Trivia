@@ -2,6 +2,9 @@ function start() {
 		$('#instructScreen').css("display", "none");
 		$('#openingScreen').css("display", "grid");
 		$('#onePlayer').css("display", "none");
+		$('#s1r1').css("display", "none");
+		$('#s1r2').css("display", "none");
+		$('#s1r3').css("display", "none");
 		$('#twoPlayer').css("display", "none");
 		$('#buttons').css("display", "none");
 		$('#stats').css("display", "none");
@@ -488,6 +491,8 @@ class Game1p extends Game {
 		$('#openingScreen').css("display", "none");
 		$('#onePlayer').css("display", "grid");
 		$('#s1r1').css("display", "grid");
+		$('#s1r2').css("display", "none");
+		$('#s1r3').css("display", "none");
 		$('#buttons').css("display", "grid");
 		$('#twoPlayer').css("display", "none");
 		$('#stats').css("display", "none");
