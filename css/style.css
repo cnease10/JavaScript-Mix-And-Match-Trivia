@@ -1,5 +1,6 @@
 body {
 	background-color:  #006080;
+	font-family: 'Roboto Mono', monospace;
 
 }
 
@@ -31,6 +32,7 @@ body {
 	border: 1px solid black;
 	text-align: center;
 	font-size: 50px;
+	font-family: 'Roboto Mono', monospace;
 	color: white;
 	background-image: url("https://wallpapertag.com/wallpaper/full/a/3/a/248305-top-coding-background-1920x1200.jpg");
 	background-position: center center;
@@ -96,6 +98,7 @@ body {
   	border-radius: 30px;
   	background-color: #006080;
   	color: white;
+  	font-family: 'Roboto Mono', monospace;
 
 }
 #back:hover {
@@ -119,13 +122,11 @@ body {
 
 #s1r1 > .q1 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
-	
   	background-position: center center;
-  	background-size: cover;
   	background-size: 300px;
   	background-repeat: no-repeat;
+  	min-height: 100px;
   	padding-bottom: 10px;
-	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 2;
 	text-align: center;
@@ -133,17 +134,18 @@ body {
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
 	
 }
 #s1r1 > .q2 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
 	
   	background-position: center center;
-  	background-size: cover;
   	background-size: 300px;
+  	min-height: 100px;
   	background-repeat: no-repeat;
   	padding-bottom: 10px;
-	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 3;
 	text-align: center;
@@ -151,17 +153,17 @@ body {
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
 }
 
 #s1r1 > .q3 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
-  	
   	background-position: center;
-  	background-size: cover;
   	background-size: 300px;
   	background-repeat: no-repeat;
   	padding-bottom: 10px;
-	min-height: 100px;
+  	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 4;
 	text-align: center;
@@ -169,49 +171,63 @@ body {
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
 }
 #s1r1 > .a1 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
 	background-position: center;
-  	background-size: cover;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 2;
 	text-align: center;
 	font-size: 45px;
+	font-weight: bold;
 	padding-top: 50px;
-	color: #80dfff;
-	margin-bottom: 5px;
+	color: #33ccff;
+	margin: 15px;
 }
 #s1r1 > .a2 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
-	background-position: center center;
-  	background-size: cover;
-  	border-radius: 50px;
-	grid-column: 2/3;
-	grid-row: 2;
-	text-align: center;
-	font-size: 45px;
-	padding-top: 50px;
-	color:#80dfff;
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 3;
-	margin-bottom: 5px;
-	grid-row-gap: 5px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
 
 }
 #s1r1 > .a3 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
-	background-position: center center;
-  	background-size: cover;
-  	border-radius: 50px;
-	text-align: center;
-	font-size: 45px;
-	padding-top: 50px;
-	color:#80dfff;
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 4;
-	margin-bottom: 5px;
-	grid-row-gap: 5px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
 
 }
 
@@ -225,19 +241,20 @@ body {
 	background-size: cover;
 }
 #s1r2 > h1 {
+	color: #33ccff;
 	grid-column: 1/3;
 	grid-row: 1;
 	text-align: center;
+	font-size: 65px;
 }
 
 #s1r2 > .q1 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
   	background-position: center center;
-  	background-size: cover;
   	background-size: 300px;
   	background-repeat: no-repeat;
+  	min-height: 100px;
   	padding-bottom: 10px;
-	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 2;
 	text-align: center;
@@ -245,17 +262,18 @@ body {
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
 	
 }
 #s1r2 > .q2 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
 	
   	background-position: center center;
-  	background-size: cover;
   	background-size: 300px;
+  	min-height: 100px;
   	background-repeat: no-repeat;
   	padding-bottom: 10px;
-	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 3;
 	text-align: center;
@@ -263,16 +281,17 @@ body {
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
 }
 #s1r2 > .q3 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
   	
   	background-position: center;
-  	background-size: cover;
   	background-size: 300px;
   	background-repeat: no-repeat;
   	padding-bottom: 10px;
-	min-height: 100px;
+  	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 4;
 	text-align: center;
@@ -280,48 +299,63 @@ body {
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
 }
 #s1r2 > .a1 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
 	background-position: center;
-  	background-size: cover;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 2;
 	text-align: center;
 	font-size: 45px;
+	font-weight: bold;
 	padding-top: 50px;
-	color: #80dfff;
-	margin-bottom: 5px;
-	grid-row-gap: 5px;
+	color: #33ccff;
+	margin: 15px;
 }
 #s1r2 > .a2 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
-	background-position: center center;
-  	background-size: cover;
-  	border-radius: 50px;
-	grid-column: 2/3;
-	grid-row: 2;
-	text-align: center;
-	font-size: 35px;
-	padding-top: 50px;
-	color:#80dfff;
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 3;
-	margin-bottom: 5px;
-	grid-row-gap: 5px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
 
 }
 #s1r2 > .a3 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
-	background-position: center center;
-  	background-size: cover;
-  	border-radius: 50px;
-	text-align: center;
-	font-size: 45px;
-	padding-top: 50px;
-	color:#80dfff;
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 4;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
 
 
 }
@@ -336,19 +370,20 @@ grid-template-columns: 1fr 1fr;
 	background-size: cover;
 }
 #s1r3 > h1 {
+	color: #33ccff;
 	grid-column: 1/3;
 	grid-row: 1;
 	text-align: center;
+	font-size: 65px;
 }
 
 #s1r3 > .q1 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
   	background-position: center center;
-  	background-size: cover;
   	background-size: 300px;
   	background-repeat: no-repeat;
+  	min-height: 100px;
   	padding-bottom: 10px;
-	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 2;
 	text-align: center;
@@ -356,16 +391,17 @@ grid-template-columns: 1fr 1fr;
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
 }
 #s1r3 > .q2 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
 	
   	background-position: center center;
-  	background-size: cover;
   	background-size: 300px;
+  	min-height: 100px;
   	background-repeat: no-repeat;
   	padding-bottom: 10px;
-	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 3;
 	text-align: center;
@@ -373,16 +409,17 @@ grid-template-columns: 1fr 1fr;
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
 }
 #s1r3 > .q3 {
 	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
   	
   	background-position: center;
-  	background-size: cover;
   	background-size: 300px;
   	background-repeat: no-repeat;
   	padding-bottom: 10px;
-	min-height: 100px;
+  	min-height: 100px;
 	grid-column: 1/2;
 	grid-row: 4;
 	text-align: center;
@@ -390,53 +427,836 @@ grid-template-columns: 1fr 1fr;
 	padding-top: 50px;
 	color: #33ccff;
 	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
 }
 #s1r3 > .a1 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
 	background-position: center;
-  	background-size: cover;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 2;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#s1r3 > .a2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 3;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#s1r3 > .a3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 50px;
+  	min-height: 100px;
+  	padding-top: 15px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	font-weight: bold;
+	color: #33ccff;
+	margin: 15px;
+
+}
+/*2 player - player 1 style*/
+#p1r1 {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 15% 20% 20% 20%;
+	grid-gap: 10px;
+	background-image: url("https://i.pinimg.com/originals/8f/43/57/8f4357e3c3fa2588151fc9bb1e0d0ca8.jpg");
+	background-size: cover;
+}
+#p1r1 > h1 {
+	color: #33ccff;
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	font-size: 65px;
+}
+
+#p1r1 > .q1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	min-height: 100px;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
+	
+}
+#p1r1 > .q2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	
+  	background-position: center center;
+  	background-size: 300px;
+  	min-height: 100px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 3;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+
+#p1r1 > .q3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+	grid-column: 1/2;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p1r1 > .a1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 2;
 	text-align: center;
 	font-size: 45px;
+	font-weight: bold;
 	padding-top: 50px;
-	color: #80dfff;
-	margin-bottom: 5px;
-	grid-row-gap: 5px;
+	color: #33ccff;
+	margin: 15px;
+}
+#p1r1 > .a2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 3;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
 
 }
-#s1r3 > .a2 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
-	background-position: center center;
-  	background-size: cover;
-  	border-radius: 50px;
+#p1r1 > .a3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 4;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+
+/*2 player 1 player round 2*/
+
+#p1r2 {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 15% 20% 20% 20%;
+	grid-gap: 10px;
+	background-image: url("https://i.pinimg.com/originals/8f/43/57/8f4357e3c3fa2588151fc9bb1e0d0ca8.jpg");
+	background-size: cover;
+}
+#p1r2 > h1 {
+	color: #33ccff;
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	font-size: 65px;
+}
+
+#p1r2 > .q1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	min-height: 100px;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
+	
+}
+#p1r2 > .q2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	
+  	background-position: center center;
+  	background-size: 300px;
+  	min-height: 100px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 3;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p1r2 > .q3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	
+  	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+	grid-column: 1/2;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p1r2 > .a1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 2;
 	text-align: center;
-	font-size: 30px;
+	font-size: 45px;
+	font-weight: bold;
 	padding-top: 50px;
-	color:#80dfff;
+	color: #33ccff;
+	margin: 15px;
+}
+#p1r2 > .a2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 3;
-	margin-bottom: 5px;
-	grid-row-gap: 5px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
 
 }
-#s1r3 > .a3 {
-	background-image: url("https://png.pngtree.com/element_origin_min_pic/17/06/26/2a5e8376c8b2799cf7f85bd3cf49b5dd.jpg");
-	background-position: center center;
-  	background-size: cover;
-  	border-radius: 50px;
-	text-align: center;
-	font-size: 30px;
-	padding-top: 50px;
-	color:#80dfff;
+#p1r2 > .a3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
 	grid-column: 2/3;
 	grid-row: 4;
-	margin-bottom: 5px;
-	grid-row-gap: 5px;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
 
 }
+
+/*2 player 1 player round 3*/
+
+#p1r3 {
+grid-template-columns: 1fr 1fr;
+	grid-template-rows: 15% 20% 20% 20%;
+	grid-gap: 10px;
+	background-image: url("https://i.pinimg.com/originals/8f/43/57/8f4357e3c3fa2588151fc9bb1e0d0ca8.jpg");
+	background-size: cover;
+}
+#p1r3 > h1 {
+	color: #33ccff;
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	font-size: 65px;
+}
+
+#p1r3 > .q1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	min-height: 100px;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
+}
+#p1r3 > .q2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	
+  	background-position: center center;
+  	background-size: 300px;
+  	min-height: 100px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 3;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p1r3 > .q3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	
+  	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+	grid-column: 1/2;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p1r3 > .a1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 2;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#p1r3 > .a2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 3;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#p1r3 > .a3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 50px;
+  	min-height: 100px;
+  	padding-top: 15px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	font-weight: bold;
+	color: #33ccff;
+	margin: 15px;
+
+}
+
+/*2 player mode 2nd player style*/
+
+#p2r1 {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 15% 20% 20% 20%;
+	grid-gap: 10px;
+	background-image: url("https://i.pinimg.com/originals/8f/43/57/8f4357e3c3fa2588151fc9bb1e0d0ca8.jpg");
+	background-size: cover;
+}
+#p2r1 > h1 {
+	color: #33ccff;
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	font-size: 65px;
+}
+
+#p2r1 > .q1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	min-height: 100px;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
+	
+}
+#p2r1 > .q2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	
+  	background-position: center center;
+  	background-size: 300px;
+  	min-height: 100px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 3;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+
+#p2r1 > .q3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+	grid-column: 1/2;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p2r1 > .a1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 2;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+}
+#p2r1 > .a2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 3;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#p2r1 > .a3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 4;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+
+/*2 player 2nd player round 2*/
+
+#p2r2 {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 15% 20% 20% 20%;
+	grid-gap: 10px;
+	background-image: url("https://i.pinimg.com/originals/8f/43/57/8f4357e3c3fa2588151fc9bb1e0d0ca8.jpg");
+	background-size: cover;
+}
+#p2r2 > h1 {
+	color: #33ccff;
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	font-size: 65px;
+}
+
+#p2r2 > .q1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	min-height: 100px;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
+	
+}
+#p2r2 > .q2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	
+  	background-position: center center;
+  	background-size: 300px;
+  	min-height: 100px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 3;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p2r2 > .q3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	
+  	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+	grid-column: 1/2;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p2r2 > .a1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 2;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+}
+#p2r2 > .a2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 3;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#p2r2 > .a3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 4;
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+
+}
+
+/*2 player 2nd player round 3*/
+
+#p2r3 {
+grid-template-columns: 1fr 1fr;
+	grid-template-rows: 15% 20% 20% 20%;
+	grid-gap: 10px;
+	background-image: url("https://i.pinimg.com/originals/8f/43/57/8f4357e3c3fa2588151fc9bb1e0d0ca8.jpg");
+	background-size: cover;
+}
+#p2r3 > h1 {
+	color: #33ccff;
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	font-size: 65px;
+}
+
+#p2r3 > .q1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	background-position: center center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	min-height: 100px;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin:15px;
+}
+#p2r3 > .q2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	
+  	background-position: center center;
+  	background-size: 300px;
+  	min-height: 100px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+	grid-column: 1/2;
+	grid-row: 3;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p2r3 > .q3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+  	
+  	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+	grid-column: 1/2;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	font-weight: bold;
+	grid-row-gap: 10px;
+	margin: 15px;
+}
+#p2r3 > .a1 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 2;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#p2r3 > .a2 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 10px;
+  	min-height: 100px;
+  	padding-top: 50px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 3;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	padding-top: 50px;
+	color: #33ccff;
+	margin: 15px;
+
+}
+#p2r3 > .a3 {
+	background-image: url("https://www.stickpng.com/assets/thumbs/588a6b2ad06f6719692a2d2a.png");
+	background-position: center;
+  	background-size: 300px;
+  	background-repeat: no-repeat;
+  	padding-bottom: 50px;
+  	min-height: 100px;
+  	padding-top: 15px;
+  	padding-bottom: 10px;
+	grid-column: 2/3;
+	grid-row: 4;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 50px;
+	font-weight: bold;
+	color: #33ccff;
+	margin: 15px;
+
+}
+
+
 
 #buttons {
 	background-image: url("https://i.pinimg.com/originals/8f/43/57/8f4357e3c3fa2588151fc9bb1e0d0ca8.jpg");
@@ -447,20 +1267,23 @@ grid-template-columns: 1fr 1fr;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+	font-family: 'Roboto Mono', monospace;
 
 }
 #buttons > h3 {
 	grid-column: 1/4;
+	grid-row: 1;
 	font-size: 30px;
 }
 #q1a1, #q1a2, #q1a3, #q2a1, #q2a2, #q2a3, #q3a1, #q3a2, #q3a3, #continue {
-	color: white; 
+	color: #33ccff;  
+	font-family: 'Roboto Mono', monospace;
 	padding: 10px;
 	margin-left: 15px;
 	margin-bottom: 5px;
 	font-size: 18px;
-	background-image: url("https://rfclipart.com/image/preview/38-e8-21/abstract-blue-polygonal-tech-texture-background-Download-Royalty-free-Vector-File-EPS-194700.jpg");
-	background-position: center;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJcMBQS1HorqHF5Hj6EX0cw5CJ2qXQgVm7LwqCn8kG6H3RJi31");
+	background-position: bottom;
 	font-weight: bold;
 }
 
@@ -473,3 +1296,54 @@ grid-template-columns: 1fr 1fr;
 	grid-column: 2/3;
 	font-size: 30px;
 }
+
+#finalScreen {
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	text-align: center;
+	background-image: url("https://images3.alphacoders.com/660/66017.jpg");
+	background-size: cover;
+	height: 100vh;
+	color: white;
+}
+#finalScoreText {
+	grid-row: 1;
+	grid-column: 2/4;
+	font-weight: bold;
+	font-size: 50px;
+}
+#finalScreen > h2{
+	grid-row: 2;
+	grid-column: 2/4;
+	font-weight: bold;
+	font-size: 35px;
+}
+#restart {
+	background-color: #ccf2ff;
+	/*width: 150px;*/
+    height: 80px;
+	grid-row: 3;
+	grid-column: 2/3;
+}
+#suckButton {
+	/*width: 150px;*/
+	height: 80px;
+	grid-row: 3;
+	grid-column: 3/4;
+}
+#funny {
+	grid-row: 1/4;
+	grid-column: 1/4;
+ 	width: 350px;
+  	height: 250px;
+  	position: relative;
+  	animation-name: floaty;
+  	animation-duration: 5s;
+  	animation-iteration-count: 10;
+}
+@keyframes floaty {
+  0%   {left:200px; top:100px;}
+  25%  {right:100px; top:50px;}
+  50%  {left:0px; bottom:100px;}
+  75%  { right:100px; top:200px;}
+  100% {left:100px; top:200px;}

@@ -111,6 +111,16 @@ $('#continue').on('click', ()=> {
 $('#restart').on('click', () => {
 	location.reload();
 });
+$('#suckButton').on('click', () => {
+	const img = $('<iframe/>');
+	img.attr('id', 'funny');
+	img.attr('src','https://giphy.com/embed/3o6Mb43PiNTQS5WgLu');
+	img.css('display', 'block');
+	$('#finalScreen').append(img);
+
+	
+});
+
 $('#q1a1').on('click', ()=> {
 	if (onePlayer.currentRound === 1) {
 		onePlayer.p1correct += 1;
@@ -534,7 +544,7 @@ class Game1p extends Game {
 		$('#twoPlayer').css("display", "none");
 		$('#buttons').css("display", "none");
 		$('#stats').css("display", "none");
-		$('#finalScreen').css("display", "block");
+		$('#finalScreen').css("display", "grid");
 	}
 	
 
@@ -766,14 +776,14 @@ class Game2p extends Game {
 		$('#s1r1').css("display", "none");
 		$('#s1r2').css("display", "none");
 		$('#s1r3').css("display", "none");
-		$('#twoPlayer').css("display", "block");
-		$('#p1r1').css("display", "block");
+		$('#twoPlayer').css("display", "grid");
+		$('#p1r1').css("display", "grid");
 		$('#p1r2').css("display", "none");
 		$('#p1r3').css("display", "none");
 		$('#p2r1').css("display", "none");
 		$('#p2r2').css("display", "none");
 		$('#p2r3').css("display", "none");
-		$('#buttons').css("display", "block");
+		$('#buttons').css("display", "grid");
 		$('#stats').css("display", "none");
 		$('#r1Stats').css("display", "none");
 		$('#r2Stats').css("display", "none");
@@ -786,14 +796,14 @@ class Game2p extends Game {
 		$('#s1r1').css("display", "none");
 		$('#s1r2').css("display", "none");
 		$('#s1r3').css("display", "none");
-		$('#twoPlayer').css("display", "block");
+		$('#twoPlayer').css("display", "grid");
 		$('#p1r1').css("display", "none");
 		$('#p1r2').css("display", "none");
 		$('#p1r3').css("display", "none");
-		$('#p2r1').css("display", "block");
+		$('#p2r1').css("display", "grid");
 		$('#p2r2').css("display", "none");
 		$('#p2r3').css("display", "none");
-		$('#buttons').css("display", "block");
+		$('#buttons').css("display", "grid");
 		$('#stats').css("display", "none");
 		$('#r1Stats').css("display", "none");
 		$('#r2Stats').css("display", "none");
@@ -807,14 +817,14 @@ class Game2p extends Game {
 		$('#s1r1').css("display", "none");
 		$('#s1r2').css("display", "none");
 		$('#s1r3').css("display", "none");
-		$('#twoPlayer').css("display", "block");
+		$('#twoPlayer').css("display", "grid");
 		$('#p1r1').css("display", "none");
-		$('#p1r2').css("display", "block");
+		$('#p1r2').css("display", "grid");
 		$('#p1r3').css("display", "none");
 		$('#p2r1').css("display", "none");
 		$('#p2r2').css("display", "none");
 		$('#p2r3').css("display", "none");
-		$('#buttons').css("display", "block");
+		$('#buttons').css("display", "grid");
 		$('#stats').css("display", "none");
 		$('#r1Stats').css("display", "none");
 		$('#r2Stats').css("display", "none");
@@ -827,14 +837,14 @@ class Game2p extends Game {
 		$('#s1r1').css("display", "none");
 		$('#s1r2').css("display", "none");
 		$('#s1r3').css("display", "none");
-		$('#twoPlayer').css("display", "block");
+		$('#twoPlayer').css("display", "grid");
 		$('#p1r1').css("display", "none");
 		$('#p1r2').css("display", "none");
 		$('#p1r3').css("display", "none");
 		$('#p2r1').css("display", "none");
-		$('#p2r2').css("display", "block");
+		$('#p2r2').css("display", "grid");
 		$('#p2r3').css("display", "none");
-		$('#buttons').css("display", "block");
+		$('#buttons').css("display", "grid");
 		$('#stats').css("display", "none");
 		$('#r1Stats').css("display", "none");
 		$('#r2Stats').css("display", "none");
@@ -847,14 +857,14 @@ class Game2p extends Game {
 		$('#s1r1').css("display", "none");
 		$('#s1r2').css("display", "none");
 		$('#s1r3').css("display", "none");
-		$('#twoPlayer').css("display", "block");
+		$('#twoPlayer').css("display", "grid");
 		$('#p1r1').css("display", "none");
 		$('#p1r2').css("display", "none");
-		$('#p1r3').css("display", "block");
+		$('#p1r3').css("display", "grid");
 		$('#p2r1').css("display", "none");
 		$('#p2r2').css("display", "none");
 		$('#p2r3').css("display", "none");
-		$('#buttons').css("display", "block");
+		$('#buttons').css("display", "grid");
 		$('#stats').css("display", "none");
 		$('#r1Stats').css("display", "none");
 		$('#r2Stats').css("display", "none");
@@ -868,14 +878,14 @@ class Game2p extends Game {
 		$('#s1r1').css("display", "none");
 		$('#s1r2').css("display", "none");
 		$('#s1r3').css("display", "none");
-		$('#twoPlayer').css("display", "block");
+		$('#twoPlayer').css("display", "grid");
 		$('#p1r1').css("display", "none");
 		$('#p1r2').css("display", "none");
 		$('#p1r3').css("display", "none");
 		$('#p2r1').css("display", "none");
 		$('#p2r2').css("display", "none");
-		$('#p2r3').css("display", "block");
-		$('#buttons').css("display", "block");
+		$('#p2r3').css("display", "grid");
+		$('#buttons').css("display", "grid");
 		$('#stats').css("display", "none");
 		$('#r1Stats').css("display", "none");
 		$('#r2Stats').css("display", "none");
@@ -900,7 +910,7 @@ class Game2p extends Game {
 		$('#r1Stats').css("display", "none");
 		$('#r2Stats').css("display", "none");
 		$('#r3Stats').css("display", "none");
-		$('#finalScreen').css("display", "block");
+		$('#finalScreen').css("display", "grid");
 	}
 
 }
