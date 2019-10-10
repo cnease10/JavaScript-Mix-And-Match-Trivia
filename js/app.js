@@ -333,7 +333,11 @@ class Game {
 		this.finalScore = 0,
 		this.questions = [],
 		this.answers = [],
-		this.currentRound = 0
+		this.currentRound = 0,
+		this.p1Round = 0,
+		this.p2Round = 0,
+		this.time = 40,
+		this.newInterval;
 		
 	}
 	instructionScreen() {
@@ -356,26 +360,79 @@ class Game {
 	roundUpdate() {
 		this.currentRound+=1;
 	}
-		
 	
+	setTimer() {
+		const $timer = $('#timer');
+		this.newInterval = setInterval(() => {
+
+			if(this.time === 0) {
+				clearInterval(this.newInterval);
+				alert("Time's up pal! Hit continue to keep going!");
+			} else {
+				this.time--
+			}
+			$timer.text(`Timer: ${this.time}s`)
+		}, 1000)
+	}
+	
+	timerSetup() {
+		if(this.currentRound === 1){
+     		this.time = 40;
+   		} else if(this.currentRound === 2){
+   			clearInterval(this.newInterval)
+      		this.time = 31;
+   		} else if(this.currentRound === 3){
+   			clearInterval(this.newInterval);
+      		this.time = 21;
+    	} else if (this.p1Round === 1 && this.p2Round === 0){
+    		clearInterval(this.newInterval);
+      		this.time = 40;
+   		} else if (this.p2Round ===1 && this.p1Round === 1 ) {
+   			clearInterval(this.newInterval);
+   			this.time = 40;
+   		} else if (this.p1Round === 2 && this.p2Round === 1) {
+   			clearInterval(this.newInterval);
+   			this.time = 31;
+   		} else if (this.p2Round === 2 && this.p1Round === 2) {
+   			clearInterval(this.newInterval);
+   			this.time = 31;
+   		} else if (this.p1Round === 3 && this.p2Round === 2) {
+   			clearInterval(this.newInterval);
+   			this.time = 21;
+   		} else if (this.p2Round === 3 && this. p1Round === 3) {
+   			clearInterval(this.newInterval);
+   			this.time = 21;
+   		} else {
+   			this.time = 30;
+   		}
+   	}
 	round1setup() {
 		this.addQuestions();
 		this.roundUnoQuestions();
 		this.addAnswers();
 		this.roundUnoAnswers();
 		this.roundUpdate();
+		this.timerSetup();
+		this.setTimer();
+
+		
+
 	}
 
 	round2setup() {
 		this.roundDosQuestions();
 		this.roundDosAnswers();
 		this.roundUpdate();
+		this.timerSetup();
+		this.setTimer();
 	}
 
 	round3setup() {
 		this.roundTresQuestions();
 		this.roundTresAnswers();
 		this.roundUpdate();
+		this.timerSetup();
+		this.setTimer();
 	}
 
 	addQuestions () {
@@ -498,6 +555,7 @@ class Game {
 //1 player game
 
 class Game1p extends Game {
+
 	round1screen () {
 		$('#openingScreen').css("display", "none");
 		$('#onePlayer').css("display", "grid");
@@ -555,11 +613,11 @@ const onePlayer = new Game1p ();
 
 //2 player game
 class Game2p extends Game {
-	constructor() {
-		super();
-		this.p1Round = 0,
-		this.p2Round = 0
-	}
+	// constructor() {
+	// 	super();
+	// 	this.p1Round = 0,
+	// 	this.p2Round = 0
+	// }
 
 	p1RoundUpdate() {
 		this.p1Round += 1;
@@ -576,35 +634,53 @@ class Game2p extends Game {
 		this.addAnswers();
 		this.p1Round1Answers();
 		this.p1RoundUpdate();
+		this.timerSetup();
+		this.setTimer();
+
 	}
 
 	p2Round1Setup() {
 		this.p2Round1Questions();
 		this.p2Round1Answers();
 		this.p2RoundUpdate();
+		this.timerSetup();
+		this.setTimer();
+
 	}
 
 	p1Round2Setup() {
 		this.p1Round2Questions();
 		this.p1Round2Answers();
 		this.p1RoundUpdate();
+		this.timerSetup();
+		this.setTimer();
+
 	}
 
 	p2Round2Setup() {
 		this.p2Round2Questions();
 		this.p2Round2Answers();
 		this.p2RoundUpdate();
+		this.timerSetup();
+		this.setTimer();
+
 	}
 
 	p1Round3Setup() {
 		this.p1Round3Questions();
 		this.p1Round3Answers();
 		this.p1RoundUpdate();
+		this.timerSetup();
+		this.setTimer();
+
 	}
 	p2Round3Setup() {
 		this.p2Round3Questions();
 		this.p2Round3Answers();
 		this.p2RoundUpdate();
+		this.timerSetup();
+		this.setTimer();
+
 	}
 	p2FinalScreenSetup() {
 		const $h23 = $('<h2/>');
