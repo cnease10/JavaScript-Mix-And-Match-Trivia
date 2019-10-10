@@ -369,7 +369,9 @@ class Game {
 		const $timer = $('#timer');
 		this.newInterval = setInterval(() => {
 
-			if(this.time === 0) {
+			if (this.time===0 && this.currentRound === 4 || this.p2Round === 4) {
+				console.log('hi');
+			} else if(this.time === 0) {
 				clearInterval(this.newInterval);
 				alert("Time's up pal! Hit continue to keep going!")		
 			} else {
@@ -554,7 +556,6 @@ class Game {
 		$h1.attr('id', 'sph1');
 		$h1.text(`Correct Answers: ${this.p1correct.toString()} of 9`);
 		$h1.insertAfter('#finalScoreText');
-	}
 
 
 }
