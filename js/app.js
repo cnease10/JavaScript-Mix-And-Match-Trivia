@@ -21,10 +21,12 @@ function start() {
 		$('#r2Stats').css("display", "none");
 		$('#r3Stats').css("display", "none");
 		$('#finalScreen').css("display", "none");
-		
 
-	}
-$(window).on( "load", start() );
+}
+const music = new Audio("./music/music.mp3");
+
+$(window).on( "load", start());
+	
 
 
 $('#instructions').on('click', () => {
@@ -41,6 +43,7 @@ $('#p1').on('click', ()=> {
 	const $h1 = $('<h1/>')
 	$h1.text('Player 1, Round 1');
 	$('#s1r1').prepend($h1);
+	music.play();
 });
 
 $('#p2').on('click', () => {
@@ -49,6 +52,7 @@ $('#p2').on('click', () => {
 	const $h1 = $('<h1/>')
 	$h1.text('Player 1, Round 1');
 	$('#p1r1').prepend($h1);
+	music.play();
 });
 
 $('#continue').on('click', ()=> {
@@ -367,7 +371,7 @@ class Game {
 
 			if(this.time === 0) {
 				clearInterval(this.newInterval);
-				alert("Time's up pal! Hit continue to keep going!");
+				alert("Time's up pal! Hit continue to keep going!")		
 			} else {
 				this.time--
 			}
@@ -384,6 +388,9 @@ class Game {
    		} else if(this.currentRound === 3){
    			clearInterval(this.newInterval);
       		this.time = 21;
+   		} else if (this.currentRound === 4) {
+   			clearInterval(this.newInterval);
+   			this.time=240;
     	} else if (this.p1Round === 1 && this.p2Round === 0){
     		clearInterval(this.newInterval);
       		this.time = 40;
@@ -402,8 +409,9 @@ class Game {
    		} else if (this.p2Round === 3 && this. p1Round === 3) {
    			clearInterval(this.newInterval);
    			this.time = 21;
-   		} else {
-   			this.time = 30;
+   		} else if (this.p2Round === 4) {
+   			clearInterval(this.newInterval);
+   			this.time=240;
    		}
    	}
 	round1setup() {
@@ -541,6 +549,7 @@ class Game {
 		
 	}
 	finalScoreSetup() {
+		this.roundUpdate();
 		const $h1 = $('<h2/>');
 		$h1.attr('id', 'sph1');
 		$h1.text(`Correct Answers: ${this.p1correct.toString()} of 9`);
@@ -683,6 +692,7 @@ class Game2p extends Game {
 
 	}
 	p2FinalScreenSetup() {
+		this.p2RoundUpdate();
 		const $h23 = $('<h2/>');
 		$h23.attr("id", "h22")
 		$h23.text(` Player 1 Correct Answers: ${this.npcorrect.toString()} of 9`);
