@@ -115,7 +115,7 @@ $('#suckButton').on('click', () => {
 	const img = $('<iframe/>');
 	img.attr('id', 'funny');
 	img.attr('src','https://giphy.com/embed/3o6Mb43PiNTQS5WgLu');
-	img.css('display', 'block');
+	img.css('display', 'relative');
 	$('#finalScreen').append(img);
 
 	
@@ -485,6 +485,7 @@ class Game {
 	}
 	finalScoreSetup() {
 		const $h1 = $('<h2/>');
+		$h1.attr('id', 'sph1');
 		$h1.text(`Correct Answers: ${this.p1correct.toString()} of 9`);
 		$h1.insertAfter('#finalScoreText');
 	}
@@ -606,12 +607,14 @@ class Game2p extends Game {
 		this.p2RoundUpdate();
 	}
 	p2FinalScreenSetup() {
-		const $h2 = $('<h2/>');
-		$h2.text(` Player 2 Correct Answers: ${this.npcorrect.toString()} of 9`);
-		$h2.insertAfter('#finalScoreText');
 		const $h23 = $('<h2/>');
-		$h23.text(` Player 1 Correct Answers: ${this.p2p1correct.toString()} of 9`);
+		$h23.attr("id", "h22")
+		$h23.text(` Player 1 Correct Answers: ${this.npcorrect.toString()} of 9`);
 		$h23.insertAfter('#finalScoreText');
+		const $h2 = $('<h2/>');
+		$h2.attr("id", "h21")
+		$h2.text(` Player 1 Correct Answers: ${this.p2p1correct.toString()} of 9`);
+		$h2.insertAfter('#h22');
 	
 
 	}
