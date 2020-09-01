@@ -1,4 +1,5 @@
 # Web-Dev-Trivia-Game
+Game can be found/played here https://cnease10.github.io/JavaScript-Mix-And-Match-Trivia/
 
 Game User Stories
 1.Pick 1 player or 2 player
